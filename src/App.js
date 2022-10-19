@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ReactDOM } from "react";
+
+import css from ".//App.css";
 
 function App() {
+  const handleClick = (event) => {
+    alert("Hello you clicked me");
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+      <section className="counter-container">
+        <div className="counter-label">0</div>
+        <button className="action-btn">Increament</button>
+        <button className="action-btn"> Decreament </button>
+      </section>
+
+      < div>
+      <form className="form-container">
+        <input type="text" placeholder="Enter Your Name">
+      
+        </input>
+        <input type="email" placeholder="Enter Your Email">
+      
+        </input>
+        <input type="password" placeholder="Enter Your Password">
+        
+        </input>
+
+        <button type="submit"> Submit </button>
+      </form>
+      </div>
+      </>
   );
 }
 
