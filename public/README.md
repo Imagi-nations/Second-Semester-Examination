@@ -18,9 +18,9 @@ The app makes use of the use reducer hook to implement
 
 Pages
 1. 404 page exists to handle the error
-2. There is a page to test the error boundary
+2. ErrorBoundary page to test the error boundary
 3. The CustomHook and useReducer are implemented on the Homepage
-4. Mobile first SEO practice is use to set the page title and page SEO 
+4. Mobile first SEO practice is used to set the page title and page SEO 
 
 Netlify link { }
 

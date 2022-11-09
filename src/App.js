@@ -3,16 +3,19 @@ import { React } from "react";
 import FormHandler from "./components/form";
 import Counter from "./components/Counter";
 import Header from "./components/Header";
-import useCustomHook from "./Hooks/useCustomHook";
+//import { ErrorBoundary } from "react-error-boundary";
 function App() {
 
   return (
     <>
-      <Header />
-      <Counter />
-      <div className="form">
-        <FormHandler />
-      </div>
+    {/*<ErrorBoundary>*/}
+    <Header />
+    <Counter />
+    <div className="form">
+      <FormHandler />
+    </div>
+    {/*</ErrorBoundary>*/}
+    
     </>
   );
 }
