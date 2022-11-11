@@ -22,5 +22,5 @@ Pages
 3. The CustomHook and useReducer are implemented on the Homepage
 4. Mobile first SEO practice is used to set the page title and page SEO 
 
-Netlify link { }
+Netlify link { https://okondor-exam.netlify.app/}
 
