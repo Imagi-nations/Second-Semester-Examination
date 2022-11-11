@@ -5,8 +5,7 @@ function useCustomHook(initialValue) {
   const handleDecrement =  () => setValue((x) => x-1);
   const handleIncrement = () => setValue( (x) => x + 1);
   const handleReset = () => setValue(initialValue|| 0);
-  const participantId = () => setValue( (x) => x + Math.floor(Math.random()*1000001));
-  return [value, setValue, handleDecrement, handleIncrement, handleReset, participantId];
+  return [value, setValue, handleDecrement, handleIncrement, handleReset];
 }
 
 export default useCustomHook;

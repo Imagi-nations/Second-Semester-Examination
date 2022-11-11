@@ -1,7 +1,7 @@
-import{react, useEffect, useState, useReducer} from 'react'
+/*import{react, useEffect, useState, useReducer} from 'react'
 
 function useReducer(){
 
 }
 
-export default useReducer;
+export default useReducer;*/

@@ -1,10 +1,9 @@
 import React from "react";
-import useCustomHook from "../Hooks/useCustomHook";
+import useParticipantId from "../Hooks/useParticipantId";
+
 function FormHandler() {
-  const participantNumber = useCustomHook(0);
-  const [
-    value, participantId,
-  ] = participantNumber;
+  const participantNumber = useParticipantId(0);
+  const [value,setValue, participantId] = participantNumber;
   return (
     <>
       <h4 className="header"> Register on My React App</h4>
@@ -17,7 +16,7 @@ function FormHandler() {
         <input type="email" placeholder="Enter Your Email"></input>
         <input type="password" placeholder="Enter Your Password"></input>
         <input type="int" placeholder="Enter Participant Number "></input>
-
+    {setValue}{}{}{}
         <button
           type="submit"
           onClick={(e) => {

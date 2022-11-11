@@ -1,12 +1,11 @@
-import {useState} from "react";
-function useParticipantid() {
-  
-  let [participantid, setParticipantId] = useState(0);
+import { useState } from "react";
+function useParticipantId(initialValue) {
 
-  const participantNumber = () => setParticipantId(() => Math.random()*100);
+  let [value, setValue] = useState(initialValue || 0);
 
-  console.log(useParticipantid)
-  
-  return [participantid, setParticipantId, participantNumber];
+  const participantId = () => setValue((x) => x + Math.floor(Math.random() * 1000001));
+
+  return [value, setValue, participantId];
 }
-export default useParticipantid;
+
+export default useParticipantId;

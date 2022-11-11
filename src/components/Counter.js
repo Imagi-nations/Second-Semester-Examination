@@ -2,7 +2,7 @@ import { React } from "react";
 import useCustomHook from "../Hooks/useCustomHook";
 function Counter() {
  const useCustomHookResult = useCustomHook(0);
- const [value, handleDecrement, handleIncrement,handleReset] = useCustomHookResult;
+ const [value, setValue, handleDecrement, handleIncrement, handleReset] = useCustomHookResult;
  
   return (
     <>
@@ -17,6 +17,7 @@ function Counter() {
       <button className="decrement-btn" onClick={handleDecrement}>
         Decrement
       </button>
+      {setValue}
   
       </div>
       
