@@ -1,8 +1,8 @@
-import { React, useState } from "react";
+import { React } from "react";
 import useCustomHook from "../Hooks/useCustomHook";
 function Counter() {
- const userCustomHookResult = useCustomHook(0);
- const [value, setValue, handleDecrement, handleIncrement,handleReset] = userCustomHookResult;
+ const useCustomHookResult = useCustomHook(0);
+ const [value, setValue, handleDecrement, handleIncrement,handleReset] = useCustomHookResult;
  
   return (
     <>

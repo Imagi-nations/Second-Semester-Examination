@@ -1,4 +1,5 @@
 import React from "react";
+import ErrorImage from "../Images/ErrorImage";
 //import { ErrorBoundary } from "react-error-boundary";
 
 class ErrorBoundary extends React.Component {
@@ -19,8 +20,9 @@ class ErrorBoundary extends React.Component {
     if (this.state.hasError) {
       // You can render any custom fallback UI
       return (<>
-        
+        <ErrorImage/>
         <h1>Something went wrong.</h1>
+        <p> please go back to previous page</p>
         </>)
     }
     return this.props.children;

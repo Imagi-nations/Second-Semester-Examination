@@ -44,7 +44,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 15px;
   justify-content: center;
 }
 .counter-label {
@@ -117,21 +117,30 @@ input {
   margin-bottom: 10px;
   border-radius: 5px;
 }
-random-btn {
+.random-btn {
   background-color: rgb(20, 20, 87);
   text-align: center;
   text-decoration: none;
   display: flex;
-  justify-content: center;
   font-size: large;
-  font: 600;
+  font: 400;
   border-radius: 10px;
-  margin-bottom: auto;
-  padding: 15px 32px;
+  margin: auto;
+  padding: 10px 10px;
   color: aliceblue;
+  justify-content: center;
+  align-items: center;
 }
+
 button {
   padding: auto;
   background-color: #61dafb;
   border-radius: 5px;
+}
+
+.error-img {
+  justify-items: center;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
 }
