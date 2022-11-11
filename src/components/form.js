@@ -3,7 +3,7 @@ import useCustomHook from "../Hooks/useCustomHook";
 function FormHandler() {
   const participantNumber = useCustomHook(0);
   const [
-    value,setValue,handleDecrement, handleIncrement, handleReset, participantId,
+    value, participantId,
   ] = participantNumber;
   return (
     <>

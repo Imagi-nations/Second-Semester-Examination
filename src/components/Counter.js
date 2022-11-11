@@ -2,7 +2,7 @@ import { React } from "react";
 import useCustomHook from "../Hooks/useCustomHook";
 function Counter() {
  const useCustomHookResult = useCustomHook(0);
- const [value, setValue, handleDecrement, handleIncrement,handleReset] = useCustomHookResult;
+ const [value, handleDecrement, handleIncrement,handleReset] = useCustomHookResult;
  
   return (
     <>
